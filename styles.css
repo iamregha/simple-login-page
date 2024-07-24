@@ -1,0 +1,100 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, professional font */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(9, 46, 84, 0.8)), url('https://img.freepik.com/free-photo/businessman-showing-changes-report_1098-3504.jpg?t=st=1721828762~exp=1721832362~hmac=4ae049021b6999da3821763102391d49809af8231512e75f475e6a3e5224a849&w=740');
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: right; /* Align image to the right */
+    display: flex; /* Flexbox for centering */
+    justify-content: flex-start; /* Align container to the left */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Padding to keep the login container away from the edge */
+}
+
+/* Login Container Styling */
+.login-container {
+    margin-left: 15%;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for larger screens */
+    padding: 20px; /* Padding for spacing */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Login Box Styling */
+.login-box {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside the box */
+}
+
+/* Header Styling */
+h1 {
+    color: #00416A; /* Primary color */
+    font-size: 24px; /* Font size */
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Centered text */
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 15px; /* Space between input groups */
+}
+
+/* Label Styling */
+.label {
+    display: block; /* Block display for spacing */
+    font-size: 14px; /* Font size */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Login Button Styling */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the button */
+    background: #00416A; /* Primary color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+/* Login Button Hover Effect */
+.login-button:hover {
+    background: #00334d; /* Darker shade on hover */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 600px) {
+    body {
+        background-position: center; /* Center the background image on small screens */
+    }
+    
+    .login-container {
+        margin:auto;
+        padding: 15px; /* Reduced padding */
+    }
+    
+    h1 {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .login-button {
+        font-size: 14px; /* Smaller font size */
+    }
+}
